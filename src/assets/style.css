@@ -1,0 +1,126 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  font-family: sans-serif;
+  justify-self: center;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+
+.yt, .liveChat {
+  width: 100%;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  grid-gap: 20px;
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+}
+
+.stage__container {
+  padding: 10px;
+  background-color: darksalmon;
+  cursor: pointer;
+}
+
+.stage__heading {
+  text-align: center;
+}
+
+.video {
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, min-content);
+  align-items: center;
+  text-align: center;
+  visibility: hidden;
+  transform: translateY(100%);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .8);
+  backdrop-filter: blur(5px);
+  color: beige;
+  overflow: hidden;
+  transition: .2s ease;
+}
+
+.video__subtitle {
+  font-size: 40px;
+  letter-spacing: 3px;
+  font-family: arial;
+  text-transform: uppercase;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, .6));
+}
+
+.video__streaming {
+  display: grid;
+  grid-template-columns: minmax(250px, .8fr);
+  grid-gap: 10px;
+  justify-content: center;
+}
+
+.liveChat {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: .2s ease;
+}
+
+.chatOut {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.liveVideo {
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .4));
+}
+
+.grid-collapse {
+  grid-template-columns: 60vw 1fr;
+}
+
+.popOut {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.cta-chat {
+  padding: 10px;
+  font-family: sans-serif;
+  color: black;
+  background-color: beige;
+  border-radius: 4px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  cursor: pointer;
+}
+
+.exit {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
