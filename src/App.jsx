@@ -41,8 +41,3 @@ const App = () => {
 }
 
 export default App;
-
-{/* <div className='container'>
-        <Youtube className='yt' videoId="8o49U8xAfZ4" opts={opts} onReady={_onReady}/>
-        <iframe className='liveChat' title='Live Chat Event' frameBorder="0" width="480" height="480" src={currentURL}></iframe>
-</div> */}
