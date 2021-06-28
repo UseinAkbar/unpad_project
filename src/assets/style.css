@@ -25,23 +25,6 @@ h1 {
   grid-gap: 20px;
 }
 
-.stage {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  justify-items: center;
-}
-
-.stage__container {
-  padding: 10px;
-  background-color: darksalmon;
-  cursor: pointer;
-}
-
-.stage__heading {
-  text-align: center;
-}
-
 .video {
   padding: 0 40px;
   display: grid;

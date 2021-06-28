@@ -24,8 +24,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="text-2xl">Live Stream Web App</h1>
-      <div className="stage">
+      <h1 className="text-4xl">Live Stream Web App</h1>
+      <div className="grid grid-cols-1 gap-4 justify-items-center">
         {
           data.map((item, i) => {
             const {id, title} = item

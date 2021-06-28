@@ -4,8 +4,8 @@ const Stage = ({id, title, handleClick}) => {
 
 
     return (
-        <div className="stage__container" onClick={() => handleClick(id, title)}>
-            <h1 className="stage__heading">{title}</h1>
+        <div className="bg-red-500 p-8 cursor-pointer" onClick={() => handleClick(id, title)}>
+            <h1 className="text-center">{title}</h1>
         </div>
     )
 }

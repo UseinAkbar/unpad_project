@@ -32,7 +32,7 @@ const Video = ({id, title, classVideo, handleClick}) => {
 
     return (
         <div className={`video ${classVideo}`}>
-            <h2 className="video__subtitle">{title}</h2>
+            <h2 className="video__subtitle my-6">{title}</h2>
             <div className={`video__streaming ${isGrid && 'grid-collapse'}`}>
                 <div className='liveVideo'>
                     <Youtube className='yt' videoId={id} opts={opts} />
