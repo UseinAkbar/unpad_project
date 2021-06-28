@@ -24,7 +24,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Live Stream Web App</h1>
+      <h1 className="text-2xl">Live Stream Web App</h1>
       <div className="stage">
         {
           data.map((item, i) => {
