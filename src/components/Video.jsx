@@ -24,11 +24,6 @@ const Video = ({id, title, classVideo, handleClick}) => {
         setGrid(false)
         setChat(false)
     }
-  
-    // const _onReady = (event) => {
-    //   // access to player in all event handlers via event.target
-    //   event.target.playVideo();
-    // }
 
     return (
         <div className={`video ${classVideo}`}>
