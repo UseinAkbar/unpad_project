@@ -1,42 +1,35 @@
 import React, {useState} from 'react'
-import Stage from './components/Stage'
-import Video from './components/Video'
-import data from './data'
+import Home from './components/Home'
+import Register from './components/Register'
+import Stages from './components/Stages'
+import Livestream from './components/Livestream'
+import Exhibition from './components/Exhibition'
+import Stage3 from './components/Stage3'
+import Error from './components/Error'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
 
 const App = () => {
-  const [videoID, setVideoID] = useState({id: '', subtitle: ''})
-  const [kelas, setKelas] = useState('')
-
-  const handlePopOut = (id, subtitle) =>{
-    setVideoID(() => {
-      return {
-        id,
-        subtitle
-      }
-    })
-    setKelas('popOut')
-  }
-
-  const handlePopIn = (kelas) => {
-    setKelas(kelas)
-    setVideoID({id: '', title: ''})
-  }
-
+  const state = localStorage.getItem('clicked')
+  
   return (
-    <div className="App">
-      <h1 className="text-4xl">Live Stream Web App</h1>
-      <div className="grid grid-cols-1 gap-4 justify-items-center">
-        {
-          data.map((item, i) => {
-            const {id, title} = item
-            return (
-              <Stage key={i} id={id} title={title} handleClick={handlePopOut}/>
-            )
-          })
-        }
+    <Router>
+      <div className="App">
+        {/* <ul className="topbar">
+          <li className='topbar__list'><a className='topbar__link' href='/'>Home</a></li>
+        </ul> */}
+        
+        <Register removeClass={`${state ? 'removeAbsen' : null}`}/>
+        
+        <Switch>
+          <Route path='/' component={Home} exact />
+          <Route path='/stages' component={Stages} />
+          <Route path='/livestream' component={Livestream} />
+          <Route path='/exhibition' component={Exhibition} />
+          <Route path='/stage3' component={Stage3} />
+          <Route component={Error} />
+        </Switch>
       </div>
-      <Video id={videoID.id} title={videoID.subtitle} classVideo={kelas} handleClick={handlePopIn}/>
-    </div>
+    </Router>
         );
 }
 
