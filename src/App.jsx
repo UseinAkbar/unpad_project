@@ -4,6 +4,7 @@ import Register from './components/Register'
 import Stages from './components/Stages'
 import Livestream from './components/Livestream'
 import Exhibition from './components/Exhibition'
+import Topbar from './components/Topbar'
 import Stage3 from './components/Stage3'
 import Error from './components/Error'
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
@@ -14,9 +15,7 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        {/* <ul className="topbar">
-          <li className='topbar__list'><a className='topbar__link' href='/'>Home</a></li>
-        </ul> */}
+        <Topbar/>
         
         <Register removeClass={`${state ? 'removeAbsen' : null}`}/>
         
