@@ -35,7 +35,7 @@ const Live = () => {
         <section className='stream'>
           {/* <img src={livestream} className="stream__background" /> */}
           <div className={`stream__video ${isCollapse && 'streamCollapse'}`}>
-            <Youtube className='yt' style={{width:400}} videoId='8o49U8xAfZ4' opts={opts} />
+            <Youtube className='yt' videoId='8o49U8xAfZ4' opts={opts} />
           </div>
 
           <button className="chat__cta" onClick={handleClick}>
