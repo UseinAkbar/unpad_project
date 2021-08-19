@@ -7,7 +7,7 @@ import img3 from "../img/img-3.jpg";
 import img4 from "../img/img-4.jpg";
 import img5 from "../img/img-5.jpg";
 import img6 from "../img/img-6.jpg";
-import SlideVideo from "./SlideVideo";
+// import SlideVideo from "./SlideVideo";
 import PopUpVideo from "./PopUpVideo";
 import SwiperMobile from "./SwiperMobile";
 

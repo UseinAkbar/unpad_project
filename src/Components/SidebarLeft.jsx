@@ -28,7 +28,7 @@ const SidebarLeft = () => {
             })}
 
             <span className='sidebar__toggle' onClick={handleCLick}>
-                <img src={rightArrow} style={{transform: `rotate(${deg}deg)`}} className='sidebar__toggle-icon' />
+                <img src={rightArrow} style={{transform: `rotate(${deg}deg)`}} className='sidebar__toggle-icon' alt="tonggle icon" />
             </span>
         </div>
     )

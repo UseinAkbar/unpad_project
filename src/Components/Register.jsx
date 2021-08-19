@@ -18,7 +18,7 @@ const Register = ({removeClass}) => {
         <div className={`${removeClass} absenContainer`}>
             <div className={`absen animatedAbsen ${isHidden && 'hidden'}`}>
                 <h2 className="absen__heading">Silakan absen terlebih dahulu.</h2>
-                <a href="https://www.youtube.com" target='_blank' className="absen__btn" onClick={handlePopIn}>Link</a>
+                <a href="https://www.youtube.com" target='_blank' className="absen__btn" onClick={handlePopIn} rel="noreferrer">Link</a>
             </div>
 
             {isDone && <div className='done'>
