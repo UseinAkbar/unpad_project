@@ -318,6 +318,11 @@ body {
     justify-self: center;
     text-transform: uppercase;
     font-weight: 500;
+    transition: .1s ease;
+  }
+
+  .chat__cta-mobile:active {
+    transform: scale(.9);
   }
 }
 
