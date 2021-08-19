@@ -18,7 +18,7 @@ const Live = () => {
 
   const handleResponsive = () => {
     setClose(!isClose)
-    settoggleChatMobile('toggleChatMobile')
+    // settoggleChatMobile('toggleChatMobile')
   }
 
   const currentURL = `https://www.youtube.com/live_chat?v=8o49U8xAfZ4&embed_domain=${window.location.hostname}`
@@ -43,7 +43,7 @@ const Live = () => {
           </button>
 
           {/* <div className={isTrue && 'overlay'}></div> */}
-          <div className={`chat__container ${isTrue && 'toggleChat'} ${isClose && toggleChatMobile}`}>
+          <div className={`chat__container ${isTrue && 'toggleChat'} ${isClose && 'toggleChatMobile'}`}>
             <svg className={`chat__exit ${isTrue && 'toggleExit'}`} onClick={handleClick}>
               <use xlinkHref={`${icon}#icon-exit`}></use>
             </svg>
