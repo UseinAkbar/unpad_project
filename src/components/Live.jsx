@@ -15,7 +15,7 @@ const Live = () => {
     setTrue(!isTrue)
     setCollapse(!isCollapse)
   }
-
+  
   const handleResponsive = () => {
     setClose(!isClose)
     // settoggleChatMobile('toggleChatMobile')
