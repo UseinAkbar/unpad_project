@@ -1,13 +1,22 @@
-import React, {useState} from 'react';
+import React from 'react';
+import mainStageImg from '../unpad_asset/Main-Stage.png'
+import exhibitionImg from '../unpad_asset/Exhibition.png'
+import journeyImg from '../unpad_asset/HIFI-Journey.png'
 
 const Stages = () => {
 
     return (
-        <div className="container mx-auto">
-            <a className='stage__menu' href='/livestream'>Stage 1</a>
-            <a className='stage__menu' href='/exhibition'>Stage 2</a>
-            <a className='stage__menu' href='/stage3'>Stage 3</a>
-        </div>
+        <section className="stage-container mx-auto">
+            <a className='stage-container__menu' href='/livestream'>
+                <img src={mainStageImg} alt="mainStage" className='stage-livestream' />
+            </a>
+            <a className='stage-container__menu' href='/hifi-journey'>
+                <img src={journeyImg} alt="HIFIJourney" className='stage-HIFIJourney' />
+            </a>
+            <a className='stage-container__menu' href='/exhibition'>
+                <img src={exhibitionImg} alt="Exhibition" className='stage-exhibition'/>
+            </a>
+        </section>
     )
 }
 

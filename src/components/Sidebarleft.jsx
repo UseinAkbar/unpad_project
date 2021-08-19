@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import icon from '../icon/sprite.svg'
 import rightArrow from '../icon/right-arrow.png'
 
-const Sidebarleft = () => {
+const SidebarLeft = () => {
     const iconList = ['#icon-home', '#icon-live', '#icon-info']
-    const link = ['/', '/stage1', '/info']
+    const link = ['/', '/livestream', '/info']
     const [deg, setDeg] = useState(180)
     const [isCLicked, setCLick] = useState(false)
    
@@ -19,7 +19,7 @@ const Sidebarleft = () => {
         <div className={`sidebar ${isCLicked && 'moveLeft'}`}>
             {iconList.map((item, i) => {
                 return (
-                    <a href={`${link[i]}`} className='sidebar__link'>
+                    <a key={i} href={`${link[i]}`} className='sidebar__link'>
                         <svg className={`sidebar__menu menu-${i+1}`}>
                             <use xlinkHref={`${icon}${item}`}></use>
                         </svg>
@@ -34,4 +34,4 @@ const Sidebarleft = () => {
     )
 }
 
-export default Sidebarleft
+export default SidebarLeft

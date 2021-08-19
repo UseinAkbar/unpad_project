@@ -3,6 +3,7 @@ import React, {useState} from 'react'
 const Register = ({removeClass}) => {
     const [isDone, setDone] = useState(false)
     const [isHidden, setHidden] = useState(false)
+    
     const handlePopIn = () => {
         setHidden(true)
         setDone(true)

@@ -1,6 +1,4 @@
-import React, {useState} from 'react'
-import icon from '../icon/sprite.svg'
-import rightArrow from '../icon/right-arrow.png'
+import React from 'react'
 
 const Home = () => {
     

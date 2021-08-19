@@ -3,7 +3,7 @@ import Live from './Live'
 
 const Livestream = () => {
     return (
-             <Live />
+        <Live />
     )
 }
 
