@@ -2,7 +2,6 @@ import React, {useState} from 'react'
 import Youtube from 'react-youtube'
 import chat from '../icon/chat.png'
 import icon from '../icon/sprite.svg'
-import livestream from '../unpad_asset/livestream.png'
 
 const Live = () => {
 
@@ -22,11 +21,10 @@ const Live = () => {
   }
 
   const currentURL = `https://www.youtube.com/live_chat?v=8o49U8xAfZ4&embed_domain=${window.location.hostname}`
-  const opts = {
+  const option = {
               height: '460',
               width: '600',
               playerVars: {
-                // https://developers.google.com/youtube/player_parameters
                 autoplay: 1,
               },
             }
@@ -35,11 +33,11 @@ const Live = () => {
         <section className='stream'>
           {/* <img src={livestream} className="stream__background" /> */}
           <div className={`stream__video ${isCollapse && 'streamCollapse'}`}>
-            <Youtube className='yt' videoId='8o49U8xAfZ4' opts={opts} />
+            <Youtube className='yt' videoId='8o49U8xAfZ4' opts={option} />
           </div>
 
           <button className="chat__cta" onClick={handleClick}>
-            <img src={chat} className='chat__icon'/>
+            <img src={chat} className='chat__icon' alt="chat icon"/>
           </button>
 
           {/* <div className={isTrue && 'overlay'}></div> */}
