@@ -13,7 +13,7 @@ const SwiperMobile = ({images, handlePopUp}) => {
   const params = {
     slidesPerView: 1,
     spaceBetween: 25,
-    loop: true,
+    // loop: true,
     pagination: {
       dynamicBullets: true,
       clickable: true,

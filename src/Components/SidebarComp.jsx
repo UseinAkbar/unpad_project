@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import icon from '../icon/sprite.svg'
 import rightArrow from '../icon/right-arrow.png'
 
-const SidebarLeft = () => {
-    const iconList = ['#icon-home', '#icon-live', '#icon-info']
-    const link = ['/', '/livestream', '/info']
+const SidebarComp = () => {
+    const iconList = ['#icon-stages', '#icon-live', '#icon-info', '#icon-absent']
+    const link = ['/stages', '/livestream', '/info', '#']
     const [deg, setDeg] = useState(180)
     const [isCLicked, setCLick] = useState(false)
    
@@ -34,4 +34,4 @@ const SidebarLeft = () => {
     )
 }
 
-export default SidebarLeft
+export default SidebarComp

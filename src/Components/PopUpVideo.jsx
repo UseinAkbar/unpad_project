@@ -1,6 +1,7 @@
 import React from 'react'
 import icon from '../icon/sprite.svg'
 import Youtube from 'react-youtube'
+import '../assets/css/PopUp.css'
 
 const PopUpVideo = ({num, isTrue, environment, handleClose}) => {
     const {idSlide, titleSlide, authorSlide, paraphSlide} = environment
@@ -20,22 +21,22 @@ const PopUpVideo = ({num, isTrue, environment, handleClose}) => {
                 </svg>
                 <div className="popUpContainer">
                     <div className='mainSlide'>
-                        {num < 2 && <Youtube className='yt' videoId={idSlide} opts={opts} />}
+                        {num < 2 && <Youtube className='popUpYoutube' videoId={idSlide} opts={opts} />}
                         {num === 2 && <div className='soundcloudContainer'>
                             <iframe title={idSlide} className='souncloudIframe' width="500" height="450" scrolling="no" frameborder="no" src={idSlide}></iframe>
                                 <div className='soundcloudDetail'>
                                 <a href="https://soundcloud.com/payung-teduh-official" className='soundcloudAuthor' title="Payung teduh Official" target="_blank" rel="noreferrer">Payung teduh Official</a> · <a href="https://soundcloud.com/payung-teduh-official/berdua-saja" className='soundcloudTitle' title="Berdua Saja" target="_blank" rel="noreferrer">Berdua Saja</a>
                                 </div>
                             </div>}
-                        {num > 2 && <div className='slidePost'>
-                            <img src={idSlide} className="slideImg" alt="slide" />
-                            <span className='slideText'>Source by: <a href="#" className="slideLink">{authorSlide}</a></span>
+                        {num > 2 && <div className='instagramPost'>
+                            <img src={idSlide} className="instagramImg" alt="instagramImage" />
+                            <span className='instagramText'>Source by: <a href="#" className="instagramLink">{authorSlide}</a></span>
                             </div>}
                     </div>
-                    <div className="slideDetail">
-                        <h2 className="slideTitle">{titleSlide}</h2>
-                        <span className="slideBorder"></span>
-                        <p className="slideDesc">{paraphSlide}</p>
+                    <div className="popUpDetail">
+                        <h2 className="popUpTitle">{titleSlide}</h2>
+                        <span className="popUpBorder"></span>
+                        <p className="popUpDesc">{paraphSlide}</p>
                     </div>
                 </div>
         </div>

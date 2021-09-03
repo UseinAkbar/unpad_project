@@ -10,6 +10,8 @@ import img6 from "../img/img-6.jpg";
 // import SlideVideo from "./SlideVideo";
 import PopUpVideo from "./PopUpVideo";
 import SwiperMobile from "./SwiperMobile";
+import '../assets/css/Exhibition.css'
+import SidebarComp from "./SidebarComp";
 
 const Exhibition = () => {
   const [num, setNum] = useState(0);
@@ -94,6 +96,8 @@ const Exhibition = () => {
 
   return (
     <section className="karya">
+      <SidebarComp />
+      
       <div className="karya__banner banner">
         <h1 className="karya__heading heading">Exhibitions</h1>
       </div>

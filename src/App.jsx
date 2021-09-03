@@ -6,7 +6,6 @@ import Livestream from './Components/Livestream'
 import Exhibition from './Components/Exhibition'
 import HIFIJourney from './Components/HIFIJourney'
 import Error from './Components/Error'
-import SidebarLeft from './Components/SidebarLeft'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
@@ -15,7 +14,6 @@ const App = () => {
   return (
     <Router>
       <div className="App">
-        <SidebarLeft />
         
         <Register removeClass={`${state ? 'removeAbsen' : null}`}/>
         

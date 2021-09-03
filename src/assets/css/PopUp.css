@@ -1,0 +1,172 @@
+.popUp {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: min-content;
+  grid-gap: 20px;
+  position: fixed;
+  padding: 20px 40px 40px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  transform: translateY(100%);
+  background-color: rgb(15, 14, 14);
+  z-index: 10;
+  transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.popUpPerformance {
+  transform: translateY(0);
+}
+
+.popUpContainer {
+  display: grid;
+  align-items: center;
+  grid-row-gap: 25px;
+}
+
+.popUpContainer {
+  grid-template-columns: 1fr;
+}
+
+.mainSlide {
+  width: 70%;
+  justify-self: center;
+}
+
+.soundcloudContainer {
+  display: grid;
+  grid-template-columns: max-content;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.soundcloudDetail {
+  font-size: 10px;
+  color: #cccccc;
+  line-break: anywhere;
+  word-break: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+
+.soundcloudAuthor,
+.soundcloudTitle {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.instagramPost {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 450px;
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.instagramImg {
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+.instagramLink,
+.instagramLink:visited,
+.instagramText {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: beige;
+  font-size: 14px;
+}
+
+.popUpDetail {
+  width: 70%;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  padding-bottom: 40px;
+}
+
+.popUpTitle {
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 26px;
+  color: rgb(255, 255, 221);
+}
+
+.popUpBorder {
+  height: 2.5px;
+  width: 100%;
+  background-color: rgba(255, 255, 221, 0.5);
+}
+
+.popUpDesc {
+  margin: 0;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 16px;
+  text-align: justify;
+  color: rgba(255, 255, 221, 0.8);
+}
+
+.popUpYoutube {
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+/* For popUp responsive */
+
+@media only screen and (max-width: 450px) {
+  .popUp {
+    padding: 20px 30px;
+  }
+
+  .mainSlide {
+    width: 100%;
+    padding: 0;
+    justify-self: stretch;
+  }
+
+  .popUpYoutube {
+    height: 300px;
+  }
+
+  .popUpDetail {
+    width: 100%;
+    justify-self: stretch;
+    grid-gap: 15px;
+  }
+
+  .instagramPost {
+    grid-template-rows: 400px;
+  }
+
+  .souncloudIframe {
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.closeSide {
+  justify-self: center;
+  align-self: center;
+  width: 35px;
+  height: 35px;
+  fill: #f9f7f6;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.closeSide:hover {
+  opacity: 0.8;
+}
