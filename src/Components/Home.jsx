@@ -68,7 +68,7 @@ const Home = () => {
             </section>
             <section className='py-24 bg-red-bgq flex justify-center items-center'>
                 <div className="w-3/4">
-                    <div className="flex flex-col-reverse space-x-5 lg:space-x-0 items-center">
+                    <div className="flex flex-col-reverse lg:flex-row space-x-5 lg:space-x-0 items-center">
                         <div className="w-full lg:w-1/2 space-y-5 text-purple-q">
                             <h1 className="font-extrabold text-6xl">Apa itu Pyhsics on Air?</h1>
                             <p className="text-justify font-semibold text-xl">
