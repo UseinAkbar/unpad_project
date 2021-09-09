@@ -9,7 +9,8 @@ import Asset_6 from '../unpad_asset/printilan/Asset_6.png';
 import Asset_9 from '../unpad_asset/printilan/Asset_9.png';
 import Asset_10 from '../unpad_asset/printilan/Asset_10.png';
 import Tablet from '../unpad_asset/Logo/tablet.png';
-
+// Makna
+// import Logo_1 from '../unpad_asset/Logo/1.png';
 // staff
 import Staff_1 from '../unpad_asset/staff/1.png';
 import Staff_2 from '../unpad_asset/staff/2.png';
@@ -47,10 +48,12 @@ const Home = () => {
     return (
         <main>
             <SidebarComp />
-            <section className="min-h-screen bg-yellow-q flex justify-center items-center">
+            <section className=" py-24 bg-yellow-q flex justify-center items-center">
                 <div className="space-y-5">
-                    <h1 className="text-6xl text-red-q font-bold">Bring Back The Memories</h1>
-                    <img src={Landing_logo} width="400" className="mx-auto" alt="logo" />
+                    <h1 className="text-5xl lg:text-6xl text-red-q font-bold text-center">Bring Back The Memories</h1>
+                    <div>
+                        <img src={Landing_logo} width="400" className="mx-auto" alt="logo" />
+                    </div>
                     <div className="flex justify-center">
                         <a href="/stages" className='rounded-full flex items-center space-x-4 w-96 justify-center uppercase font-bold px-7 bg-green-q text-yellow-q p-4 text-xl'>
                             <span>
@@ -63,24 +66,33 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className='min-h-screen bg-red-bgq flex justify-center items-center'>
+            <section className='py-24 bg-red-bgq flex justify-center items-center'>
                 <div className="w-3/4">
-                    <div className="flex space-x-5 items-center">
-                        <div className="w-1/2 space-y-5 text-purple-q">
+                    <div className="flex flex-col-reverse space-x-5 lg:space-x-0 items-center">
+                        <div className="w-full lg:w-1/2 space-y-5 text-purple-q">
                             <h1 className="font-extrabold text-6xl">Apa itu Pyhsics on Air?</h1>
                             <p className="text-justify font-semibold text-xl">
                                 Physics On Air (Physics One Night Affair) merupakan salah satu program kerja unggulan BP HIMA FMIPA Unpad 2021 Kabinet gemini yang bertujuan untuk memperingati ulang tahun HIFI dan menjadi wadah rekreasi anggota HIFI FMIPA UNPAD dalam berbagai bidang serta menjadi dan menjaga silaturahmi antara warga himpunan mahasiswa dan alumni Fisika FMIPA Unpad. 
                             </p>
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-full lg:w-1/2 mb-5 lg:mb-0">
                             <img src={Tablet} width='400' className="mx-auto" alt="tablet logo" />
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="min-h-screen bg-screen-pattern bg-cover">
+            {/* swiper */}
+            <section className="py-24 w-full justify-center flex bg-yellow-q">   
+            <div className="w-3/4">
+                <h1 className="text-6xl font-bold text-center py-20 text-green-q2">Makna Logo</h1>
+                <div className="flex justify-center">
+                   
+                </div>
+            </div>
+            </section>
+            <section className="hidden lg:inline py-24 bg-screen-pattern bg-cover">
                 <div className="py-20">
-                    <div className="container mx-auto">
+                    <div className="px-12">
                         <div className="flex space-x-4">
                             <h1 className="text-yellow-q2 font-bold text-6xl">
                                 <span className="bg-red-q">Meet The Team!</span>
@@ -164,7 +176,7 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="container mx-auto mt-20">
+                    <div className="px-12 mt-20">
                         <div className="flex">
                             <div className="w-1/2">
                                 <img src={Asset_6} className="transform -rotate-12" alt="" />
