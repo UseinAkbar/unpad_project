@@ -1,13 +1,10 @@
 import React from 'react';
 
-const VideoExhibition = ({index, title, desc, img, handlePopUp}) => {
+const VideoExhibition = ({index, title, thumbnail, handlePopUp}) => {
     return (
         <div className='karya__item' onClick={() => handlePopUp(index)}>
-            <img src={img} className='karya__img' alt="karya" />
-            <div className="karya__title">
-                <h2 className="karya__subheading">{title}</h2>
-                <p className="karya__paraph">{desc}</p>
-            </div>
+            <img src={thumbnail} className='karya__img' alt="karya" />
+            <h2 className="karya__title">{title}</h2>
         </div>
     )
 }

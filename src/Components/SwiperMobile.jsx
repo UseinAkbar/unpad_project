@@ -1,5 +1,5 @@
 import React from "react";
-import SwiperCore, { Pagination, EffectFade } from "swiper";
+import SwiperCore, { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import VideoExhibition from "./VideoExhibition";
 import data from "../data";
@@ -7,7 +7,7 @@ import data from "../data";
 // Import Swiper styles
 import "swiper/swiper-bundle.min.css";
 // install Swiper components
-SwiperCore.use([Pagination, EffectFade]);
+SwiperCore.use([Pagination]);
 
 const SwiperMobile = ({images, handlePopUp}) => {
   const params = {
@@ -17,13 +17,13 @@ const SwiperMobile = ({images, handlePopUp}) => {
     pagination: {
       dynamicBullets: true,
       clickable: true,
-    },
+    }
   };
 
   return (
     <Swiper {...params}>
       {data.map((item, i) => {
-        const { title, desc } = item;
+        const { title, desc, thumbnail } = item;
         return (
           <SwiperSlide key={i+1} id='swipeSlide'>
             <VideoExhibition
@@ -31,7 +31,7 @@ const SwiperMobile = ({images, handlePopUp}) => {
               index={i}
               title={title}
               desc={desc}
-              img={images[i]}
+              thumbnail={thumbnail}
               handlePopUp={handlePopUp}
             />
           </SwiperSlide>

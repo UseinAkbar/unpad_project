@@ -1,0 +1,114 @@
+.makna-logo {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    overflow: hidden;
+}
+
+.makna-logo .swiper-container {
+    width: 100%;
+}
+
+.makna-logo .makna-logo__container {
+    display:  grid;
+    grid-template-columns: max-content;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 30px;
+}
+
+.makna-logo .makna-logo__title {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Montserrat';
+
+}
+
+.makna-logo .makna-logo__img {
+    width: 350px;
+}
+
+.makna-logo .makna-logo__desc {
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .makna-logo .makna-logo__img {
+        width: 280px;
+    }
+    
+    .makna-logo .makna-logo__title {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .makna-logo .makna-logo__desc {
+        font-size: 16px;
+        text-align: justify;
+    }
+}
+
+.makna-logo .swiper-wrapper .swiper-slide {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+    justify-items: center;
+    align-content: center;
+    grid-gap: 20px;
+    padding: 50px 80px 80px;
+}
+
+@media only screen and (max-width: 450px) {
+    .makna-logo .swiper-wrapper .swiper-slide {
+        padding: 50px 40px 60px;
+    }
+}
+
+.swiper-button-prev, .swiper-button-next {
+    color: #265653 !important;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+} 
+
+.swiper-button-prev:hover::before, .swiper-button-next:hover::before {
+    opacity: 1;
+}
+
+.makna-logo .swiper-button-prev {
+    left: 40px !important;
+}
+
+.makna-logo .swiper-button-next {
+    right: 40px !important;
+}
+
+.swiper-button-prev::before, .swiper-button-next::before {
+    content: '';
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ffde59;
+    opacity: .6;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .15s ease;
+}
+
+.makna-logo .swiper-pagination {
+    transform: translateY(-50%) !important;
+}
+
+.makna-logo .swiper-pagination-bullet {
+    background-color: #265653 !important;
+}
+
+@media only screen and (max-width: 450px) {
+    .makna-logo .swiper-button-prev, .makna-logo .swiper-button-next {
+        display: none;
+    }
+}

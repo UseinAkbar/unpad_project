@@ -11,7 +11,8 @@
   right: 0;
   overflow: auto;
   transform: translateY(100%);
-  background-color: rgb(15, 14, 14);
+  background-image: linear-gradient( 0,rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ), url('../background/backgroundExhibition.png');
+  background-size: cover;
   z-index: 10;
   transition: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -24,6 +25,12 @@
   display: grid;
   align-items: center;
   grid-row-gap: 25px;
+}
+
+@media only screen and (max-width: 450px) {
+  .popUpContainer {
+    grid-row-gap: 30px;
+  }
 }
 
 .popUpContainer {
@@ -45,7 +52,7 @@
 
 .soundcloudDetail {
   font-size: 10px;
-  color: #cccccc;
+  color: #264653;
   line-break: anywhere;
   word-break: normal;
   overflow: hidden;
@@ -57,7 +64,7 @@
 
 .soundcloudAuthor,
 .soundcloudTitle {
-  color: #ccc;
+  color: #264653;
   text-decoration: none;
 }
 
@@ -72,7 +79,8 @@
 .instagramImg {
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
 }
 
 .instagramLink,
@@ -80,8 +88,8 @@
 .instagramText {
   text-decoration: none;
   font-family: "Montserrat";
-  font-weight: 300;
-  color: beige;
+  font-weight: 400;
+  color: #264653;
   font-size: 14px;
 }
 
@@ -91,35 +99,46 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .popUpTitle {
   margin: 0;
   font-family: "Montserrat";
-  font-weight: 700;
+  font-weight: 800;
   font-size: 26px;
-  color: rgb(255, 255, 221);
+  color: #1e6d94;
+  letter-spacing: 2px;
 }
 
 .popUpBorder {
-  height: 2.5px;
+  height: 4px;
   width: 100%;
-  background-color: rgba(255, 255, 221, 0.5);
+  background-color: #264653;
 }
 
 .popUpDesc {
   margin: 0;
   font-family: "Montserrat";
-  font-weight: 300;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   text-align: justify;
-  color: rgba(255, 255, 221, 0.8);
+  color: #264653;
+}
+
+@media only screen and (max-width: 450px) {
+  .popUpTitle {
+    font-size: 24px;
+  }
+
+  .popUpDesc {
+    font-size: 16px;
+  }
 }
 
 .popUpYoutube {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 
@@ -137,7 +156,7 @@
   }
 
   .popUpYoutube {
-    height: 300px;
+    height: 320px;
   }
 
   .popUpDetail {
@@ -161,12 +180,23 @@
   align-self: center;
   width: 35px;
   height: 35px;
-  fill: #f9f7f6;
-  opacity: 0.3;
+  fill: #264653;
+  opacity: .4;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   transition: 0.2s ease;
 }
 
 .closeSide:hover {
-  opacity: 0.8;
+  opacity: .8;
+}
+
+@media only screen and (max-width: 450px) {
+  .closeSide {
+    opacity: .6;
+  }
+
+  .closeSide:hover {
+    opacity: .6;
+  }
 }

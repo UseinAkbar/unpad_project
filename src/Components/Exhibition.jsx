@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import VideoExhibtion from "./VideoExhibition";
 import data from "../data";
-import img1 from "../img/img-1.jpg";
-import img2 from "../img/img-2.jpg";
-import img3 from "../img/img-3.jpg";
-import img4 from "../img/img-4.jpg";
-import img5 from "../img/img-5.jpg";
-import img6 from "../img/img-6.jpg";
+import bannerExhibition from '../unpad_asset/exhibitionImages/bannerExhibition.png'
+// import img1 from "../img/img-1.jpg";
+// import img2 from "../img/img-2.jpg";
+// import img3 from "../img/img-3.jpg";
+// import img4 from "../img/img-4.jpg";
+// import img5 from "../img/img-5.jpg";
+// import img6 from "../img/img-6.jpg";
 // import SlideVideo from "./SlideVideo";
-import PopUpVideo from "./PopUpVideo";
+import PopUpExhibition from "./PopUpExhibition";
 import SwiperMobile from "./SwiperMobile";
 import '../assets/css/Exhibition.css'
 import SidebarComp from "./SidebarComp";
@@ -24,7 +25,6 @@ const Exhibition = () => {
   const [isTrue, setTrue] = useState(false);
   const [disableLeft, setDisableLeft] = useState(false);
   const [disableRight, setDisableRight] = useState(false);
-  const images = [img1, img2, img3, img4, img5, img6];
 
   const setData = (i) => {
     const { id, title, paraph, author = "" } = data[i];
@@ -98,31 +98,29 @@ const Exhibition = () => {
     <section className="karya">
       <SidebarComp />
       
-      <div className="karya__banner banner">
-        <h1 className="karya__heading heading">Exhibitions</h1>
-      </div>
+      <img className="karya__banner" src={bannerExhibition} />
 
       <div className="karya__video-desktop">
         {data.map((item, i) => {
-          const { title, desc } = item;
+          const { title, desc, thumbnail } = item;
           return (
             <VideoExhibtion
               key={i}
               index={i}
               title={title}
               desc={desc}
-              img={images[i]}
+              thumbnail={thumbnail}
               handlePopUp={handlePopUp}
             />
           );
         })}
       </div>
 
-      <div className="karya__video-mobile">
-        <SwiperMobile images={images} handlePopUp={handlePopUp} />
-      </div>
+      {/* <div className="karya__video-mobile">
+        <SwiperMobile handlePopUp={handlePopUp} />
+      </div> */}
 
-      <PopUpVideo
+      <PopUpExhibition
         num={num}
         isTrue={isTrue}
         environment={environment}

@@ -1,7 +1,24 @@
-body {
+:root {
+  --font-primary: 'Montserrat', sans-serif;
+}
+
+html {
   box-sizing: border-box;
+  /* font-size: 62.5%; */
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.6;
 }
 
 .title {
@@ -558,13 +575,13 @@ body {
   letter-spacing: 1px;
 }
 
-.banner {
+/* .banner {
   background-size: cover;
   padding: 40px;
   display: grid;
   grid-template-columns: max-content;
   align-items: center;
-}
+} */
 
 .heading {
   margin: 0;

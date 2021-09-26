@@ -1,5 +1,6 @@
 import React from 'react'
 import SidebarComp from './SidebarComp'
+import SwiperLogo from './SwiperLogo';
 import Landing_logo from '../unpad_asset/Logo/Landing_logo.png';
 import Asset_3 from '../unpad_asset/printilan/Asset_3.png';
 import Asset_7 from '../unpad_asset/printilan/Asset_7.png';
@@ -82,11 +83,11 @@ const Home = () => {
                 </div>
             </section>
             {/* swiper */}
-            <section className="py-24 w-full justify-center flex bg-yellow-q">   
-            <div className="w-3/4">
+            <section className="bg-yellow-q">   
+            <div className="">
                 <h1 className="text-6xl font-bold text-center py-20 text-green-q2">Makna Logo</h1>
-                <div className="flex justify-center">
-                   
+                <div className="makna-logo">
+                   <SwiperLogo />
                 </div>
             </div>
             </section>
