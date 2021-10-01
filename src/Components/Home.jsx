@@ -91,27 +91,27 @@ const Home = () => {
                 </div>
             </div>
             </section>
-            <section className="hidden lg:inline py-24 bg-screen-pattern bg-cover">
-                <div className="py-20">
+            <section className="py-24 bg-screen-pattern bg-cover">
+                <div className="py-0 md:py-20">
                     <div className="px-12">
                         <div className="flex space-x-4">
-                            <h1 className="text-yellow-q2 font-bold text-6xl">
+                            <h1 className="text-yellow-q2 font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
                                 <span className="bg-red-q">Meet The Team!</span>
                             </h1>
                             <div>
-                                <img src={Asset_3} width="70" className="transform rotate-12" alt="camera" />
+                                <img src={Asset_3} className="w-10 md:w-20 transform rotate-12" alt="camera" />
                             </div>
                         </div>
                         {/* section 1 */}
                         <div className="flex justify-center mt-20">
-                            <div className="flex items-center">
+                            <div className="hidden lg:flex items-center">
                                 <img src={Asset_1} width="170" className="transform -rotate-12" alt="Tape" />
                             </div>
                             <div className="w-4/6">
                                 <div>
-                                <div className="grid grid-cols-3 gap-4 text-center">
-                                    <div className="row-span-3 -mr-14 flex justify-center items-center">
-                                        <img src={Staff_1} width="200" className="ml-auto" alt="staff 1" />
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                                    <div className="col-span-2 md:col-span-1 row-span-2 -mr-0 lg:-mr-14 flex justify-center items-center">
+                                        <img src={Staff_1} width="200" className="ml-0 md:ml-auto" alt="staff 1" />
                                     </div>
                                     <div className="">
                                         <img src={Staff_2} width="170" className="ml-auto" alt="staff 2" />
@@ -125,7 +125,7 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex items-end">
+                            <div className="hidden lg:flex items-end">
                                     <img src={Asset_7} width="150" className="transform scale-x-flip" alt="Tape" />
                             </div>
                         </div>
@@ -133,52 +133,52 @@ const Home = () => {
                     {/* section 2 */}
 
                     <div className="mt-20">
-                        <div className="flex">
-                            <div className="w-1/2">
-                                <div className="grid grid-cols-3 gap-4 text-center">
-                                    <div className="row-span-3 -mr-5 flex justify-center items-center">
-                                        <img src={Staff_5} width="200" className="ml-auto" alt="staff 5" />
+                        <div className="inline lg:flex">
+                            <div className="w-full lg:w-1/2">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center justify-center">
+                                    <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-3 -mr-0 md:-mr-14 lg:-mr-5 flex justify-center items-center">
+                                        <img src={Staff_5} width="200" className="ml-0 md:ml-auto" alt="staff 5" />
                                     </div>
-                                    <div className="mr-10">
+                                    <div className="mr-0 md:mr-10">
                                         <img src={Staff_6} width="150" className="ml-auto" alt="staff 6" />
                                     </div>
-                                    <div className="-ml-10">
+                                    <div className="-ml-0 md:-ml-10">
                                         <img src={Staff_7} width="150" alt="staff 7" />
                                     </div>
-                                    <div className="mr-10">
+                                    <div className="mr-0 md:mr-10">
                                         <img src={Staff_8} width="150" className="ml-auto" alt="staff 8" />
                                     </div>
-                                    <div className="-ml-10">
+                                    <div className="-ml-0 md:-ml-10">
                                         <img src={Staff_9} width="150" className="mr-auto" alt="staff 9" />
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/2">
-                                <div className="-ml-12 grid grid-cols-4 gap-4 text-center">
-                                    <div className="row-span-3 flex justify-center items-center">
-                                        <img src={Staff_10} className="transform scale-115 ml-4" width="400" alt="staff 10" />
+                            <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
+                                <div className="-ml-0 lg:-ml-12 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                    <div className="-mr-0 md:-mr-12 lg:-mr-0  row-span-1 md:row-span-3 col-span-2 md:col-span-1 flex justify-center items-center">
+                                        <img src={Staff_10} className="transform-none md:transform scale-0 md:scale-115 ml-0 md:ml-4" width="150" alt="staff 10" />
                                     </div>
                                     <div className="">
                                         <img src={Staff_11} width="150" className="ml-auto" alt="staff 11" />
                                     </div>
                                     <div className="">
-                                        <img src={Staff_12} width="150" alt="staff 12" />
+                                        <img src={Staff_12} width="150" alt="staff 12" className="mr-auto lg:mx-0"/>
                                     </div>
-                                    <div className="flex items-center row-span-3">
-                                        <img src={Staff_13} width="150" alt="staff 13" />
-                                    </div>
-                                    <div className="">
-                                        <img src={Staff_14} width="150" className="ml-auto" alt="staff 14" />
+                                    <div className="flex items-center row-span-1 md:row-span-3">
+                                        <img src={Staff_13} width="150" alt="staff 13" className="ml-auto md:-ml-10 md:mr-auto lg:mx-0" />
                                     </div>
                                     <div className="">
-                                        <img src={Staff_15} width="150" className="mr-auto" alt="staff 15" />
+                                        <img src={Staff_14} width="150" className="mr-auto md:mr-0 md:ml-auto" alt="staff 14" />
+                                    </div>
+                                    <div className="col-span-2 md:col-span-1">
+                                        <img src={Staff_15} width="150" className="mx-auto md:mx-0 md:mr-auto lg:ml-auto lg:mr-auto" alt="staff 15" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="px-12 mt-20">
-                        <div className="flex">
+                    <div className="px-12 my-5 lg:my-10">
+                        <div className="hidden md:flex">
                             <div className="w-1/2">
                                 <img src={Asset_6} className="transform -rotate-12" alt="" />
                             </div>
@@ -188,49 +188,49 @@ const Home = () => {
                         </div>
                     </div>
                     {/* section 3 */}
-                    <div className="-mt-10">
-                        <div className="flex">
-                            <div className="w-1/2">
-                                <div className="grid grid-cols-3 gap-4 text-center">
-                                    <div className="row-span-3 -mr-5 flex justify-center items-center">
-                                        <img src={Staff_16} width="200" className="ml-auto" alt="staff 5" />
+                    <div className="-mt-0 md:mt-20 lg:-mt-10">
+                        <div className="mt-10 lg:mt-0 inline lg:flex">
+                            <div className="w-full lg:w-1/2">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                                    <div className="row-span-1 md:row-span-3 col-span-2 md:col-span-1 -mr-0 md:-mr-5 flex justify-center items-center">
+                                        <img src={Staff_16} width="150" className="w-40 md:w-48 mx-auto md:mx-0 md:ml-auto" alt="staff 5" />
                                     </div>
-                                    <div className="mr-10">
+                                    <div className="mr-0 md:mr-10">
                                         <img src={Staff_17} width="150" className="ml-auto" alt="staff 6" />
                                     </div>
-                                    <div className="-ml-10">
+                                    <div className="-ml-0 md:-ml-10">
                                         <img src={Staff_18} width="150" alt="staff 7" />
                                     </div>
-                                    <div className="mr-10">
+                                    <div className="mr-0 md:mr-10">
                                         <img src={Staff_19} width="150" className="ml-auto" alt="staff 8" />
                                     </div>
-                                    <div className="-ml-10">
+                                    <div className="-ml-0 md:-ml-10">
                                         <img src={Staff_20} width="150" className="mr-auto" alt="staff 9" />
                                     </div>
                                 </div>
                             </div>
-                            <div className="w-1/2">
-                                <div className="grid grid-cols-3 gap-4 text-center">
-                                    <div className="row-span-3 -mr-5 flex justify-center items-center">
-                                        <img src={Staff_21} width="200" className="ml-auto" alt="staff 5" />
+                            <div className="mt-10 md:mt-20 lg:mt-0 w-full lg:w-1/2">
+                                <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
+                                    <div className="row-span-1 md:row-span-3 col-span-2 md:col-span-1 -mr-0 md:-mr-5 flex justify-center items-center">
+                                        <img src={Staff_21} width="200" className="mx-auto md:mx-0 md:ml-auto" alt="staff 5" />
                                     </div>
-                                    <div className="mr-10">
+                                    <div className="mr-0 md:mr-10">
                                         <img src={Staff_22} width="150" className="ml-auto" alt="staff 6" />
                                     </div>
-                                    <div className="-ml-10">
+                                    <div className="-ml-0 md:-ml-10">
                                         <img src={Staff_23} width="150" alt="staff 7" />
                                     </div>
-                                    <div className="mr-10">
+                                    <div className="mr-0 md:mr-10">
                                         <img src={Staff_24} width="150" className="ml-auto" alt="staff 8" />
                                     </div>
-                                    <div className="-ml-10">
+                                    <div className="-ml-0 md:-ml-10">
                                         <img src={Staff_25} width="150" className="mr-auto" alt="staff 9" />
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="flex justify-end pr-14">
+                    <div className="hidden md:flex justify-end pr-14">
                             <div  className="z-10 -mt-24">
                                 <img src={Asset_9} alt="" />
                             </div>
@@ -238,32 +238,32 @@ const Home = () => {
                     {/* section 4 */}
                     <div className="mt-20">
                         <div className="flex justify-center space-x-10">
-                            <div>
+                            <div className="hidden lg:inline">
                                 <img src={Asset_3} alt="" className="transform -rotate-12" />
                             </div>
-                            <div className="w-1/2">
-                                <div className="grid grid-cols-4 gap-4 text-center">
-                                    <div className="row-span-3 flex justify-center items-center">
-                                        <img src={Staff_26} className="transform scale-115 -ml-8" width="400" alt="staff 10" />
+                            <div className="w-full lg:w-1/2">
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                    <div className="row-span-1 md:row-span-3 col-span-2 md:col-span-1 flex justify-center items-center">
+                                        <img src={Staff_26} className="tranform-none md:transform slace-0 md:scale-115 -ml-8 md:-ml-8" width="150" alt="staff 10" />
                                     </div>
                                     <div className="">
-                                        <img src={Staff_27} width="150" className="ml-auto" alt="staff 11" />
+                                        <img src={Staff_27} width="150" className=" ml-auto" alt="staff 11" />
                                     </div>
                                     <div className="">
                                         <img src={Staff_28} width="150" alt="staff 12" />
                                     </div>
-                                    <div className="flex items-center row-span-3">
-                                        <img src={Staff_29} width="150" className="-mt-16" alt="staff 13" />
+                                    <div className="inline md:flex items-center row-span-1 md:row-span-3">
+                                        <img src={Staff_29} width="150" className="-mt-0 md:-mt-16 ml-auto md:ml-0" alt="staff 13" />
                                     </div>
                                     <div className="">
-                                        <img src={Staff_30} width="150" className="ml-auto" alt="staff 14" />
+                                        <img src={Staff_30} width="150" className="mr-auto md:ml-auto" alt="staff 14" />
                                     </div>
-                                    <div className="">
-                                        <img src={Staff_31} width="150" className="mr-auto" alt="staff 15" />
+                                    <div className="col-span-2 md:col-span-1">
+                                        <img src={Staff_31} width="150" className="mx-auto md:mr-auto" alt="staff 15" />
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex items-end">
+                            <div className="hidden lg:flex items-end">
                                 <img src={Asset_10} alt="" className="transform rotate-12" width="150" />
                             </div>
                         </div>
@@ -277,6 +277,29 @@ const Home = () => {
                         <h1 className="text-purple-q2 font-bold text-center text-5xl">Contact Us</h1>
                         <a href="http://instagram.com/" className="bg-green-q text-center align-middle text-yellow-q3 p-4 rounded-full text-2xl font-bold px-28">Instagram</a>
                         <a href="mailto:mail.com" className="bg-green-q2 text-center align-middle text-yellow-q3 p-4 rounded-full text-2xl font-bold px-28">Email</a>
+                    </div>
+                </div>
+            </section>
+
+            <section className="flex flex-col py-10 px-10 justify-center md:py-20 space-y-8 md:space-y-0 md:px-32 bg-yellow-q md:flex-row">
+                <div className="w-full md:w-1/3">
+                    <h1 className="uppercase font-bold text-xl">Get in touch</h1>
+                    <div className="flex flex-col text-left mt-3 font-semibold">
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">Line Official Account</a>
+                    </div>
+                </div>
+                <div className="w-full md:w-1/3">
+                    <h1 className="uppercase font-bold text-xl">Email</h1>
+                    <div className="flex flex-col text-left mt-3 font-semibold">
+                        <a href="#">Physicsonair@gmail.com</a>
+                    </div>
+                </div>
+                <div className="w-full md:w-1/3 px-0 md:px-20">
+                    <h1 className="uppercase font-bold text-xl">Location</h1>
+                    <div className="flex flex-col text-left mt-3 font-semibold">
+                        <p>Jl. Raya Bandung Sumedang KM.21, Hegarmamah, Jatinagor, Kabupaten Sumedang, Jawa Barat 45363 </p>
                     </div>
                 </div>
             </section>
