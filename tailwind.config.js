@@ -3,6 +3,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      fontFamily: {
+        'body': ['Montserrat', 'sans-serif']
+      },
       colors: {
         'nav': '#64c9f3',
         'navbar': '#fde8d3',

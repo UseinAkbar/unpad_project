@@ -14,7 +14,7 @@ const App = () => {
   
   return (
     <Router>
-      <div className="App">
+      <div className="App font-body">
         
         <Register removeClass={`${state ? 'removeAbsen' : null}`}/>
         
