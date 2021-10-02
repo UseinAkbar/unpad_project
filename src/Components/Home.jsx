@@ -51,12 +51,12 @@ const Home = () => {
             <SidebarComp />
             <section className=" py-24 bg-yellow-q flex justify-center items-center">
                 <div className="space-y-5">
-                    <h1 className="text-5xl lg:text-6xl text-red-q font-bold text-center">Bring Back The Memories</h1>
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl text-red-q font-bold text-center">Bring Back The Memories</h1>
                     <div>
-                        <img src={Landing_logo} width="400" className="mx-auto" alt="logo" />
+                        <img src={Landing_logo} width="400" className="w-64 lg:w-auto mx-auto" alt="logo" />
                     </div>
                     <div className="flex justify-center">
-                        <a href="/stages" className='rounded-full flex items-center space-x-4 w-96 justify-center uppercase font-bold px-7 bg-green-q text-yellow-q p-4 text-xl'>
+                        <a href="/stages" className='rounded-full flex items-center space-x-4 w-80 lg:w-96 justify-center uppercase font-bold px-7 bg-green-q text-yellow-q p-4 text-sm lg:text-xl'>
                             <span>
                                 Let's Start Our Journey
                             </span>
@@ -71,7 +71,7 @@ const Home = () => {
                 <div className="w-3/4">
                     <div className="flex flex-col-reverse lg:flex-row space-x-5 lg:space-x-0 items-center">
                         <div className="w-full lg:w-1/2 space-y-5 text-purple-q">
-                            <h1 className="font-extrabold text-6xl">Apa itu Pyhsics on Air?</h1>
+                            <h1 className="font-extrabold text-4xl lg:text-6xl">Apa itu Pyhsics on Air?</h1>
                             <p className="text-justify font-semibold text-xl">
                                 Physics On Air (Physics One Night Affair) merupakan salah satu program kerja unggulan BP HIMA FMIPA Unpad 2021 Kabinet gemini yang bertujuan untuk memperingati ulang tahun HIFI dan menjadi wadah rekreasi anggota HIFI FMIPA UNPAD dalam berbagai bidang serta menjadi dan menjaga silaturahmi antara warga himpunan mahasiswa dan alumni Fisika FMIPA Unpad. 
                             </p>
@@ -85,7 +85,7 @@ const Home = () => {
             {/* swiper */}
             <section className="bg-yellow-q">   
             <div className="">
-                <h1 className="text-6xl font-bold text-center py-20 text-green-q2">Makna Logo</h1>
+                <h1 className="text-4xl lg:text-6xl font-bold text-center pt-10 mb-5 lg:pt-10 lg:mb-0 lg:py-20 text-green-q2">Makna Logo</h1>
                 <div className="makna-logo">
                    <SwiperLogo />
                 </div>
@@ -274,9 +274,9 @@ const Home = () => {
             <section className="flex min-h-screen bg-brown-q">
                 <div className="m-auto">
                     <div className="flex flex-col space-y-5">
-                        <h1 className="text-purple-q2 font-bold text-center text-5xl">Contact Us</h1>
-                        <a href="http://instagram.com/" className="bg-green-q text-center align-middle text-yellow-q3 p-4 rounded-full text-2xl font-bold px-28">Instagram</a>
-                        <a href="mailto:mail.com" className="bg-green-q2 text-center align-middle text-yellow-q3 p-4 rounded-full text-2xl font-bold px-28">Email</a>
+                        <h1 className="text-purple-q2 font-bold text-center text-3xl md:text-4xl lg:text-5xl">Contact Us</h1>
+                        <a href="http://instagram.com/" className="bg-green-q text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Instagram</a>
+                        <a href="mailto:mail.com" className="bg-green-q2 text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Email</a>
                     </div>
                 </div>
             </section>
@@ -285,15 +285,15 @@ const Home = () => {
                 <div className="w-full md:w-1/3">
                     <h1 className="uppercase font-bold text-xl">Get in touch</h1>
                     <div className="flex flex-col text-left mt-3 font-semibold">
-                        <a href="#">Instagram</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Line Official Account</a>
+                        <a href="#"><span className="hover:underline">Instagram</span></a>
+                        <a href="#"><span className="hover:underline">Twitter</span></a>
+                        <a href="#"><span className="hover:underline">Line Official Account</span></a>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3">
                     <h1 className="uppercase font-bold text-xl">Email</h1>
                     <div className="flex flex-col text-left mt-3 font-semibold">
-                        <a href="#">Physicsonair@gmail.com</a>
+                        <a href="#"><span className="hover:underline">Physicsonair@gmail.com</span></a>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3 px-0 md:px-20">
