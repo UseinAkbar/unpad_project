@@ -68,7 +68,6 @@
 
 .swiper-button-prev, .swiper-button-next {
     color: #265653 !important;
-    position: relative;
     -webkit-tap-highlight-color: transparent;
 } 
 

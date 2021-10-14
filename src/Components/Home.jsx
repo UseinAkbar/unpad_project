@@ -56,7 +56,7 @@ const Home = () => {
                         <img src={Landing_logo} width="400" className="w-64 lg:w-auto mx-auto" alt="logo" />
                     </div>
                     <div className="flex justify-center">
-                        <a href="/stages" className='rounded-full flex items-center space-x-4 w-80 lg:w-96 justify-center uppercase font-bold px-7 bg-green-q text-yellow-q p-4 text-sm lg:text-xl'>
+                        <a href="/stages" style={{WebkitTapHighlightColor: 'transparent'}} className='rounded-full flex items-center space-x-4 w-80 lg:w-96 justify-center uppercase font-bold px-7 bg-green-q text-yellow-q p-4 text-sm lg:text-xl'>
                             <span>
                                 Let's Start Our Journey
                             </span>
@@ -274,8 +274,8 @@ const Home = () => {
                 <div className="m-auto">
                     <div className="flex flex-col space-y-5">
                         <h1 className="text-purple-q2 font-bold text-center text-3xl md:text-4xl lg:text-5xl">Contact Us</h1>
-                        <a href="https://instagram.com/hifiunpad" className="bg-green-q text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Instagram</a>
-                        <a href="mailto:physicsonair2021@gmail.com" className="bg-green-q2 text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Email</a>
+                        <a href="https://instagram.com/hifiunpad" style={{WebkitTapHighlightColor: 'transparent'}} className="bg-green-q text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Instagram</a>
+                        <a href="mailto:physicsonair2021@gmail.com" style={{WebkitTapHighlightColor: 'transparent'}} className="bg-green-q2 text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Email</a>
                     </div>
                 </div>
             </section>
@@ -284,15 +284,15 @@ const Home = () => {
                 <div className="w-full md:w-1/3">
                     <h1 className="uppercase font-bold text-xl">Get in touch</h1>
                     <div className="flex flex-col text-left mt-3 font-semibold">
-                        <a href="https://instagram.com/physicsonair"><span className="hover:underline">Instagram</span></a>
-                        <a href="https://twitter.com/hifiunpad"><span className="hover:underline">Twitter</span></a>
-                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=pit2224i"><span className="hover:underline">Line Official Account</span></a>
+                        <a href="https://instagram.com/physicsonair" style={{WebkitTapHighlightColor: 'transparent'}}><span className="hover:underline">Instagram</span></a>
+                        <a href="https://twitter.com/hifiunpad" style={{WebkitTapHighlightColor: 'transparent'}}><span className="hover:underline">Twitter</span></a>
+                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=pit2224i" style={{WebkitTapHighlightColor: 'transparent'}}><span className="hover:underline">Line Official Account</span></a>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3">
                     <h1 className="uppercase font-bold text-xl">Email</h1>
                     <div className="flex flex-col text-left mt-3 font-semibold">
-                        <a href="mailto:physicsonair2021@gmail.com"><span className="hover:underline">physicsonair2021@gmail.com</span></a>
+                        <a href="mailto:physicsonair2021@gmail.com" style={{WebkitTapHighlightColor: 'transparent'}}><span className="hover:underline">physicsonair2021@gmail.com</span></a>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3 px-0 md:px-20">
