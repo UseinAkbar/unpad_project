@@ -50,7 +50,7 @@ const Home = () => {
         <main>
             <SidebarComp />
             <section className=" py-24 bg-yellow-q flex justify-center items-center">
-                <div className="space-y-5">
+                <div className="space-y-10">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl text-red-q font-bold text-center">Bring Back The Memories</h1>
                     <div>
                         <img src={Landing_logo} width="400" className="w-64 lg:w-auto mx-auto" alt="logo" />
@@ -82,10 +82,9 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            {/* swiper */}
             <section className="bg-yellow-q">   
             <div className="">
-                <h1 className="text-4xl lg:text-6xl font-bold text-center pt-10 mb-5 lg:pt-10 lg:mb-0 lg:py-20 text-green-q2">Makna Logo</h1>
+                <h1 className="text-4xl lg:text-6xl font-bold text-center pt-20 lg:pt-20 lg:mb-0 lg:py-20 text-green-q2">Makna Logo</h1>
                 <div className="makna-logo">
                    <SwiperLogo />
                 </div>
@@ -275,25 +274,25 @@ const Home = () => {
                 <div className="m-auto">
                     <div className="flex flex-col space-y-5">
                         <h1 className="text-purple-q2 font-bold text-center text-3xl md:text-4xl lg:text-5xl">Contact Us</h1>
-                        <a href="http://instagram.com/" className="bg-green-q text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Instagram</a>
-                        <a href="mailto:mail.com" className="bg-green-q2 text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Email</a>
+                        <a href="https://instagram.com/hifiunpad" className="bg-green-q text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Instagram</a>
+                        <a href="mailto:physicsonair2021@gmail.com" className="bg-green-q2 text-center align-middle text-yellow-q3 p-3 lg:p-4 text-md rounded-full lg:text-2xl font-bold">Email</a>
                     </div>
                 </div>
             </section>
 
-            <section className="flex flex-col py-10 px-10 justify-center md:py-20 space-y-8 md:space-y-0 md:px-32 bg-yellow-q md:flex-row">
+            <section className="flex flex-col py-14 px-10 justify-center md:py-20 space-y-8 md:space-y-0 md:px-32 bg-yellow-q md:flex-row">
                 <div className="w-full md:w-1/3">
                     <h1 className="uppercase font-bold text-xl">Get in touch</h1>
                     <div className="flex flex-col text-left mt-3 font-semibold">
-                        <a href="#"><span className="hover:underline">Instagram</span></a>
-                        <a href="#"><span className="hover:underline">Twitter</span></a>
-                        <a href="#"><span className="hover:underline">Line Official Account</span></a>
+                        <a href="https://instagram.com/physicsonair"><span className="hover:underline">Instagram</span></a>
+                        <a href="https://twitter.com/hifiunpad"><span className="hover:underline">Twitter</span></a>
+                        <a href="https://liff.line.me/1645278921-kWRPP32q/?accountId=pit2224i"><span className="hover:underline">Line Official Account</span></a>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3">
                     <h1 className="uppercase font-bold text-xl">Email</h1>
                     <div className="flex flex-col text-left mt-3 font-semibold">
-                        <a href="#"><span className="hover:underline">Physicsonair@gmail.com</span></a>
+                        <a href="mailto:physicsonair2021@gmail.com"><span className="hover:underline">physicsonair2021@gmail.com</span></a>
                     </div>
                 </div>
                 <div className="w-full md:w-1/3 px-0 md:px-20">

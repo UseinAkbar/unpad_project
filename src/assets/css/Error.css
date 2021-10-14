@@ -1,0 +1,70 @@
+.error404 {
+    width: 100vw;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 30px;
+    background-color: #FDE9D4;
+}
+
+.error404__icon {
+    width: 400px;
+    height: 400px;
+}
+
+.error404__massageBox {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    grid-gap: 20px;
+}
+
+.error404__heading {
+    font-family: var(--font-primary);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.error404__link, .error404__link:visited {
+    padding: 8px 20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: #1e6d94;
+    -webkit-tap-highlight-color: transparent;
+    transition: .2s ease;
+}
+
+.error404__link:active {
+    transform: scale(.95);
+}
+
+@media only screen and (max-width: 450px) {
+    .error404 {
+        grid-template-columns: max-content;
+        grid-gap: 25px;
+    }
+
+    .error404__icon {
+        width: 300px;
+        height: 300px;
+    }
+
+    .error404__massageBox {
+        grid-gap: 15px;
+        transform: translateY(-40%);
+    }
+
+    .error404__heading {
+        font-size: 20px;
+    }
+
+    .error404__link, .error404__link:visited {
+        justify-self: center;
+    }
+}

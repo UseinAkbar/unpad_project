@@ -12,7 +12,7 @@ const GaleriAlbumPopUp = ({id, isAlbumPopUp, albumPhotos, handleClose, handleIte
                     return (
                         <div className='albumPhoto__item' key={i} onClick={() => handleItemPopUp(item)}>
                             {item.toLowerCase().includes('jpg') ? 
-                                <img src={item} alt="photo" loading="lazy" className="albumPhoto__image" /> : 
+                                <img src={item} alt="albumHIFI" loading="lazy" className="albumPhoto__image" /> : 
                                 <div className="albumPhoto__videoBox">
                                     <svg className='playVideoIcon'>
                                         <use xlinkHref={`${icon}#icon-play`}></use>

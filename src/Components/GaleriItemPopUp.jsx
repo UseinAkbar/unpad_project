@@ -12,7 +12,7 @@ const GaleriItemPopUp = ({srcItemPopUp, isItemPopUp, handleCloseItem}) => {
             {srcItemPopUp.toLowerCase().includes('jpg') ?
                 <div className="albumItem__image">
                     <Zoom>
-                        <img src={srcItemPopUp} alt="photo" loading="lazy" />
+                        <img src={srcItemPopUp} alt="previewFotoAlbumHIFI" loading="lazy" />
                     </Zoom>
                 </div> : 
                 <div className="albumItem__videoBox">

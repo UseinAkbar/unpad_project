@@ -39,8 +39,8 @@
   }
   
   .stage-livestream {
-    top: 0;
-    left: 35%;
+    top: 5%;
+    left: 35.2%;
   }
   
   .stage-HIFIJourney {
@@ -51,6 +51,29 @@
   .stage-exhibition {
     top: 48%;
     right: 8%;
+  }
+
+  @media only screen and (min-width: 1485px) {
+    .stage-livestream,
+    .stage-HIFIJourney,
+    .stage-exhibition {
+      width: 425px;
+    }
+
+    .stage-livestream {
+      top: 5%;
+      left: 35.6%;
+    }
+    
+    .stage-HIFIJourney {
+      top: 42%;
+      left: 9.5%;
+    }
+    
+    .stage-exhibition {
+      top: 42%;
+      right: 10%;
+    }
   }
   
   @media only screen and (min-width: 450px) {
@@ -112,10 +135,12 @@
       text-transform: uppercase;
       color: beige;
       font-size: 28px;
-      font-weight: 500;
+      font-weight: 600;
       letter-spacing: 2px;
       padding: 10px;
-      border-top: 1.5px solid rgba(240, 240, 230, .8);
+      backdrop-filter: blur(15px);
+      border-radius: 5px;
+      /* border-top: 1.5px solid rgba(240, 240, 230, .8); */
     }
   
     .stage-livestream--mb,
@@ -130,12 +155,21 @@
       z-index: 2;
       justify-self: center;
       transform: rotate(90deg);
-      animation: bounce .8s ease-in infinite alternate forwards;
+      animation: arrowBounce .5s ease-in infinite alternate forwards;
     }
   
     .arrowImg {
       width: 60px;
       height: 60px;
+    }
+  }
+
+  @keyframes arrowBounce {
+    0% {
+      transform: translateY(-5px) rotate(90deg);
+    }
+    100% {
+      transform: translateY(5px) rotate(90deg);
     }
   }
   

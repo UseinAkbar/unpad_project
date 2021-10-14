@@ -24,7 +24,7 @@
 .popUpContainer {
   display: grid;
   align-items: center;
-  grid-row-gap: 25px;
+  grid-row-gap: 40px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -59,7 +59,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   font-family: "Montserrat";
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .soundcloudAuthor,
@@ -76,11 +76,19 @@
   justify-items: center;
 }
 
+.instagramPost > div {
+  justify-content: center;
+}
+
 .instagramImg {
   height: 100%;
   object-fit: cover;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* width: 100%; */
   border-radius: 4px;
+}
+
+.instagramImgSlide {
+  width: 320px;
 }
 
 .instagramLink,
@@ -99,7 +107,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
-  padding-bottom: 20px;
 }
 
 .popUpTitle {
@@ -120,10 +127,14 @@
 .popUpDesc {
   margin: 0;
   font-family: "Montserrat";
-  font-weight: 600;
+  font-weight: 400;
   font-size: 18px;
   text-align: justify;
   color: #264653;
+}
+
+.popUpWinner, .popUpAngkatan {
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 450px) {
@@ -189,6 +200,15 @@
 
 .closeSide:hover {
   opacity: .8;
+}
+
+.swiper-container {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 450px) {

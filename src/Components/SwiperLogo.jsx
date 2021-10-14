@@ -15,7 +15,7 @@ const SwiperLogo = () => {
             spaceBetween={10}
             slidesPerView={1}
             loop={true}
-            autoplay={{delay: 3000, disableOnInteraction: false}}
+            autoplay={{delay: 3500, disableOnInteraction: false}}
             navigation
             pagination={{
             dynamicBullets: false,

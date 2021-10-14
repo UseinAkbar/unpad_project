@@ -19,7 +19,7 @@ const Live = () => {
     setOpen(!isOpen)
   }
 
-  const currentURL = `https://www.youtube.com/live_chat?v=8o49U8xAfZ4&embed_domain=${window.location.hostname}`
+  const currentURL = `https://www.youtube.com/live_chat?v=5qap5aO4i9A&embed_domain=${window.location.hostname}`
   const option = {
               height: '460',
               width: '600',
@@ -35,7 +35,7 @@ const Live = () => {
           <div className={`overlay ${(isTrue || isOpen) ? 'overlayFade' : null}`}></div>
 
           <div className={`stream__video ${isCollapse && 'streamCollapse'}`}>
-            <Youtube className='yt' videoId='8o49U8xAfZ4' opts={option} />
+            <Youtube className='yt' videoId='5qap5aO4i9A' opts={option} />
           </div>
 
           <button className="chat__cta" onClick={handleClick}>

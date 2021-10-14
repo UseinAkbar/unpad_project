@@ -4,7 +4,7 @@ import rightArrow from '../icon/right-arrow.png'
 
 const SidebarComp = () => {
     const iconList = ['#icon-stages', '#icon-live', '#icon-info', '#icon-absent']
-    const link = ['/stages', '/livestream', '/info', '#']
+    const link = ['/stages', '/livestream', '/info', 'https://forms.gle/6ZEqjkaTWciLFU1V7']
     const [deg, setDeg] = useState(180)
     const [isCLicked, setCLick] = useState(false)
    
@@ -19,7 +19,7 @@ const SidebarComp = () => {
         <div className={`sidebar ${isCLicked && 'moveLeft'}`}>
             {iconList.map((item, i) => {
                 return (
-                    <a key={i} href={`${link[i]}`} className='sidebar__link'>
+                    <a key={i} href={`${link[i]}`} className='sidebar__link' target={`${i === link.length-1 ? '_blank' : ''}`}>
                         <svg className={`sidebar__menu menu-${i+1}`}>
                             <use xlinkHref={`${icon}${item}`}></use>
                         </svg>

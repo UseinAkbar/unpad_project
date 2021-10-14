@@ -1,53 +1,57 @@
-import slide1 from './img/slide-1.jpg'
-import slide2 from './img/slide-2.jpg'
-import slide3 from './img/slide-3.jpg'
-import thumbnail1 from '../src/unpad_asset/exhibitionImages/thumbnail/thumbnail1.png'
-import thumbnail2 from '../src/unpad_asset/exhibitionImages/thumbnail/thumbnail2.png'
-import thumbnail3 from '../src/unpad_asset/exhibitionImages/thumbnail/thumbnail3.png'
-import thumbnail4 from '../src/unpad_asset/exhibitionImages/thumbnail/thumbnail4.png'
-import thumbnail5 from '../src/unpad_asset/exhibitionImages/thumbnail/thumbnail5.png'
-import thumbnail6 from '../src/unpad_asset/exhibitionImages/thumbnail/thumbnail6.png'
+import karyaBerkreasi from './unpad_asset/exhibitionImages/karyaBerkreasi.png'
+import karyaBergaya1 from './unpad_asset/exhibitionImages/karyaBergaya1.jpeg'
+import karyaBergaya2 from './unpad_asset/exhibitionImages/karyaBergaya2.jpg'
+import karyaMenerka from './unpad_asset/exhibitionImages/karyaMenerka.jpg'
+import berceritera from '../src/unpad_asset/exhibitionImages/thumbnail/berceritera.png'
+import berdendang from '../src/unpad_asset/exhibitionImages/thumbnail/berdendang.png'
+import bergaya from '../src/unpad_asset/exhibitionImages/thumbnail/bergaya.png'
+import berkreasi from '../src/unpad_asset/exhibitionImages/thumbnail/berkreasi.png'
+import berstrategi from '../src/unpad_asset/exhibitionImages/thumbnail/berstrategi.png'
+import menerka from '../src/unpad_asset/exhibitionImages/thumbnail/menerka.png'
 
 
 const data = [
     {
-        id: 'EFYEni2gsK0',
+        id: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1134508732&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
         title: 'POA Berceritera',
-        thumbnail: thumbnail1,
-        paraph: 'POA (kategori) terbaik diberikan kepada (nama) dari (angkatan). Selamat!'
+        thumbnail: berceritera,
+        winner: 'Emi, Naadir, Athhar, Cele',
+        angkatan: 2019,
     },
     {
-        id: 'HZ7PAyCDwEg',
+        id: 'ZX7t41ZoPhc',
         title: 'POA Berdendang',
-        thumbnail: thumbnail2,
-        paraph: 'POA (kategori) terbaik diberikan kepada (nama) dari (angkatan). Selamat!'
+        thumbnail: berdendang,
+        winner: 'Farhan & Abdul',
+        angkatan: 2018,
     },
     {
-        id: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/126584394&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+        id: [karyaBergaya1, karyaBergaya2],
         title: 'POA Bergaya',
-        thumbnail: thumbnail3, 
-        paraph: 'POA (kategori) terbaik diberikan kepada (nama) dari (angkatan). Selamat!'
+        thumbnail: bergaya, 
+        winner: 'Karisha Azhar Fauzi',
+        angkatan: 2020,
     },
     {
-        id: slide1,
+        id: karyaBerkreasi,
         title: 'POA Berkreasi',
-        thumbnail: thumbnail4, 
-        author: 'Kevin Mueller',
-        paraph: 'POA (kategori) terbaik diberikan kepada (nama) dari (angkatan). Selamat!' 
+        thumbnail: berkreasi,  
+        winner: 'Didi Permana',
+        angkatan: 2019,
     },
     {
-        id: slide2,
+        id: karyaMenerka,
         title: 'POA Menerka',
-        thumbnail: thumbnail5, 
-        author: 'Phillip Kammerrer',
-        paraph: 'POA (kategori) terbaik diberikan kepada (nama) dari (angkatan). Selamat!' 
+        thumbnail: menerka, 
+        winner: 'Wahib Al Ghifari',
+        angkatan: 2020,
     },
     {
-        id: slide3,
+        id: '',
         title: 'POA Berstrategi',
-        thumbnail: thumbnail6,
-        author: 'Thomas Kelley',
-        paraph: 'POA (kategori) terbaik diberikan kepada (nama) dari (angkatan). Selamat!'
+        thumbnail: berstrategi,
+        winner: '',
+        angkatan: '',
     }
 ]
 

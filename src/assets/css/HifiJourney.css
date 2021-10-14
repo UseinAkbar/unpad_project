@@ -166,6 +166,12 @@
     }
 }
 
+@media only screen and (min-width: 1485px) {
+    .journey__detail .journey__boxDetail-kabinet {
+        align-self: center;
+    }
+}
+
 .journey__boxDetail-tedX .journey__desc-3 {
     font-size: 16px;
     font-weight: 300;
