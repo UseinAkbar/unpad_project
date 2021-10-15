@@ -2,7 +2,6 @@ import karyaBerkreasi from './unpad_asset/exhibitionImages/karyaBerkreasi.png'
 import karyaBergaya1 from './unpad_asset/exhibitionImages/karyaBergaya1.jpeg'
 import karyaBergaya2 from './unpad_asset/exhibitionImages/karyaBergaya2.jpg'
 import karyaMenerka from './unpad_asset/exhibitionImages/karyaMenerka.jpg'
-import karyaBerstrategi from './unpad_asset/exhibitionImages/karyaBerstrategi.jpg'
 import berceritera from '../src/unpad_asset/exhibitionImages/thumbnail/berceritera.png'
 import berdendang from '../src/unpad_asset/exhibitionImages/thumbnail/berdendang.png'
 import bergaya from '../src/unpad_asset/exhibitionImages/thumbnail/bergaya.png'
@@ -48,11 +47,10 @@ const data = [
         angkatan: 2020,
     },
     {
-        id: karyaBerstrategi,
+        id: 'RjXMLXJ6MzU',
         title: 'POA Berstrategi',
         thumbnail: berstrategi,
         winner: 'Naufal Basuki',
-        source: 'https://www.youtube.com/watch?v=ICuiq-yVh6I',
         angkatan: 2020,
     }
 ]

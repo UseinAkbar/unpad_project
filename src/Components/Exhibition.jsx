@@ -9,7 +9,6 @@ import SidebarComp from "./SidebarComp";
 const Exhibition = () => {
   const [environment, setEnvironment] = useState({
     idSlide: "",
-    sourceSlide: "",
     titleSlide: "",
     winnerSlide: "",
     angkatanSlide: ""
@@ -17,10 +16,9 @@ const Exhibition = () => {
   const [isTrue, setTrue] = useState(false);
 
   const setData = (i) => {
-    const { id, title, winner, angkatan, source='' } = data[i];
+    const { id, title, winner, angkatan } = data[i];
     setEnvironment({
       idSlide: id,
-      sourceSlide: source,
       titleSlide: title,
       winnerSlide: winner,
       angkatanSlide: angkatan
@@ -36,7 +34,6 @@ const Exhibition = () => {
     setTrue(false);
     setEnvironment({
       idSlide: "",
-      sourceSlide: "",
       titleSlide: "",
       winnerSlide: "",
       angkatanSlide: ""

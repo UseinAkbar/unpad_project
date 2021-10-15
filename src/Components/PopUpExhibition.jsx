@@ -13,11 +13,10 @@ import "swiper/swiper-bundle.min.css";
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
 
 const PopUpExhibition = ({isTrue, environment, handleClose}) => {
-    const {idSlide, sourceSlide, titleSlide, winnerSlide, angkatanSlide} = environment
-    const isYoutube = ['POA Berdendang'].includes(titleSlide)
-    const isImage = ['POA Berkreasi', 'POA Bergaya', 'POA Menerka', 'POA Berstrategi'].includes(titleSlide)
+    const {idSlide, titleSlide, winnerSlide, angkatanSlide} = environment
+    const isYoutube = ['POA Berdendang', 'POA Berstrategi'].includes(titleSlide)
+    const isImage = ['POA Berkreasi', 'POA Bergaya', 'POA Menerka'].includes(titleSlide)
     const isSoundCloud = ['POA Berceritera'].includes(titleSlide)
-    const chess = <a href={sourceSlide} target='_blank' rel='noreferrer'>Chess Dies Natalis</a>
     
     const params = {
         spaceBetween: 0,
@@ -25,7 +24,7 @@ const PopUpExhibition = ({isTrue, environment, handleClose}) => {
         loop: true,
         effect: 'fade',
         autoplay: {
-            delay: 3000, 
+            delay: 2000, 
             disableOnInteraction: false
         }
     }
@@ -64,11 +63,11 @@ const PopUpExhibition = ({isTrue, environment, handleClose}) => {
                                     </SwiperSlide>
                                 )
                             })}
-                        </Swiper> : <Zoom><img src={idSlide} className="instagramImg" alt={winnerSlide} /></Zoom>}
+                            </Swiper> : <Zoom><img src={idSlide} className="instagramImg" alt={winnerSlide} /></Zoom>}
                         
-                        {titleSlide === 'POA Berstrategi' ? <span className='instagramText'>Source : {chess}</span> : <span className='instagramText'>Created by : {winnerSlide}</span>}
+                            <span className='instagramText'>Created by : {winnerSlide}</span>
                             
-                            </div>}
+                        </div>}
                     </div>
                     <div className="popUpDetail">
                         <h2 className="popUpTitle">{titleSlide}</h2>
