@@ -9,6 +9,7 @@ import SidebarComp from "./SidebarComp";
 const Exhibition = () => {
   const [environment, setEnvironment] = useState({
     idSlide: "",
+    sourceSlide: "",
     titleSlide: "",
     winnerSlide: "",
     angkatanSlide: ""
@@ -16,9 +17,10 @@ const Exhibition = () => {
   const [isTrue, setTrue] = useState(false);
 
   const setData = (i) => {
-    const { id, title, winner, angkatan } = data[i];
+    const { id, title, winner, angkatan, source='' } = data[i];
     setEnvironment({
       idSlide: id,
+      sourceSlide: source,
       titleSlide: title,
       winnerSlide: winner,
       angkatanSlide: angkatan
@@ -26,18 +28,15 @@ const Exhibition = () => {
   };
 
   const handlePopUp = (val) => {
-    if(val > 4) {
-      return
-    } else {
       setTrue(true);
       setData(val);
-    }
   };
 
   const handleClose = () => {
     setTrue(false);
     setEnvironment({
       idSlide: "",
+      sourceSlide: "",
       titleSlide: "",
       winnerSlide: "",
       angkatanSlide: ""
@@ -52,13 +51,12 @@ const Exhibition = () => {
 
       <div className="karya__desktop">
         {data.map((item, i) => {
-          const { title, desc, thumbnail } = item;
+          const { title, thumbnail } = item;
           return (
             <KaryaExhibition
               key={i}
               index={i}
               title={title}
-              desc={desc}
               thumbnail={thumbnail}
               handlePopUp={handlePopUp}
             />

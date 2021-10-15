@@ -215,3 +215,8 @@ body {
     visibility: visible;
   }
 }
+
+[data-rmiz-modal-content] {
+  display: flex;
+  justify-content: center;
+}

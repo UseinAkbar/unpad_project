@@ -13,10 +13,12 @@ import "swiper/swiper-bundle.min.css";
 SwiperCore.use([Pagination, Autoplay, EffectFade]);
 
 const PopUpExhibition = ({isTrue, environment, handleClose}) => {
-    const {idSlide, titleSlide, winnerSlide, angkatanSlide} = environment
+    const {idSlide, sourceSlide, titleSlide, winnerSlide, angkatanSlide} = environment
     const isYoutube = ['POA Berdendang'].includes(titleSlide)
-    const isImage = ['POA Berkreasi', 'POA Bergaya', 'POA Menerka'].includes(titleSlide)
+    const isImage = ['POA Berkreasi', 'POA Bergaya', 'POA Menerka', 'POA Berstrategi'].includes(titleSlide)
     const isSoundCloud = ['POA Berceritera'].includes(titleSlide)
+    const chess = <a href={sourceSlide} target='_blank' rel='noreferrer'>Chess Dies Natalis</a>
+    
     const params = {
         spaceBetween: 0,
         slidesPerView: 1,
@@ -64,8 +66,8 @@ const PopUpExhibition = ({isTrue, environment, handleClose}) => {
                             })}
                         </Swiper> : <Zoom><img src={idSlide} className="instagramImg" alt={winnerSlide} /></Zoom>}
                         
+                        {titleSlide === 'POA Berstrategi' ? <span className='instagramText'>Source : {chess}</span> : <span className='instagramText'>Created by : {winnerSlide}</span>}
                             
-                            <span className='instagramText'>Created by: {winnerSlide} </span>
                             </div>}
                     </div>
                     <div className="popUpDetail">
