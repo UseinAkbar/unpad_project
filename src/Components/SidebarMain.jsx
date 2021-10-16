@@ -4,7 +4,7 @@ import rightArrow from '../icon/right-arrow.png'
 
 const SidebarMain = () => {
     const iconList = ['#icon-home', '#icon-live', '#icon-info', '#icon-absent']
-    const link = ['/', '/livestream', '/info', 'https://forms.gle/6ZEqjkaTWciLFU1V7']
+    const link = ['/', '/livestream', '/info', 'https://bit.ly/AbsensiPOA63']
     const [deg, setDeg] = useState(180)
     const [isCLicked, setCLick] = useState(false)
    
