@@ -10,7 +10,7 @@ const Load = () => {
             color={"#1e6d94"}
             width={"75px"}
             height={"75px"}
-        />
+            />
       </div>
     )
 }

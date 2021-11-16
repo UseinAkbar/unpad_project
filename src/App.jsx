@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 const App = () => {
   const [isLoad, setLoad] = useState(false)
-  const state = localStorage.getItem('clicked')
+  // const state = localStorage.getItem('clicked')
 
   document.addEventListener('readystatechange', () => {
     if(document.readyState !== 'complete') {
@@ -26,7 +26,7 @@ const App = () => {
     <Router>
       <div className="App font-body">
         {isLoad && <Load />}
-        <Register removeClass={`${state ? 'removeAbsen' : null}`}/>
+        {/* <Register removeClass={`${state ? 'removeAbsen' : null}`}/> */}
         
         <Switch>
           <Route path='/' component={Home} exact />
